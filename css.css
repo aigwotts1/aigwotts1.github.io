@@ -1,0 +1,107 @@
+.header{
+    background-color:rgb(65, 226, 226);
+    text-align: center;
+    color:rgb(221, 107, 107);
+    font-size: 25px;
+    margin: 0px;
+    padding: 5px;
+    }
+    #load{
+        width: 100%;
+        position: fixed;
+        display: flex;
+        z-index: 99999;
+        align-items: center;
+        text-align: center;
+        height: 100vh;
+        background:rgb(245, 245, 245) url('https://drive.google.com/uc?id=1vnVXZuCM7aPxYv3vju1BlXSNtP2tDXYx') center;
+        background-repeat: no-repeat;
+
+    }
+    h1{
+        margin:0px;
+        text-shadow: 2px 3px 2px rgb(49, 34, 34);
+    }
+    .header-below nav a{
+        color: darkcyan;
+    }
+    
+    body{
+        margin: 0;
+        background-color: rgb(190, 236, 190);
+        transition: 5s;
+    }
+    .wotts{
+        border-radius: 50px;
+    }
+    .header-below{
+        background-color: rgb(48, 197, 202);
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: center;
+        font-weight: 700;
+    
+       
+    }
+    .head-below{
+        transition: 2s;
+
+    }
+    .head-below:hover{
+        transition: 2s;
+    }
+    .header-below:hover{
+        background-color: darkseagreen;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    nav a {
+        text-decoration: none;
+        padding: 50px;
+        text-align: center;
+       
+      
+    }
+    #pics{
+        text-align: center;
+        text-shadow: rgb(29, 46, 29);
+        color: rgb(58, 75, 92);
+        text-indent: 10px;
+        font-family: cursive;
+        transition: 1s;
+    }
+    #pics:hover{
+        background-color: rgb(206, 250, 162);
+        transition: 2s;
+    }
+    #videos{
+        color: midnightblue;
+        font-family: cursive;
+        text-align: center;
+        transition: 2s;
+    }
+    #videos:hover{
+        background-color: rgb(253, 211, 194);
+        transition: 2s;
+    }
+    footer{
+        background-color: rgb(86, 202, 202);
+        font-family: cursive;
+        font-weight: bold;
+        text-align: center;
+        transition: 2s;
+    }
+    footer:hover{
+        background-color: rgb(231, 133, 133);
+        transition: 3s;
+    }
+    #about{
+        text-align: center;
+        color: rgb(73, 105, 105);
+        transition: 2s;
+    }
+    #about:hover{
+        background-color: rgb(156, 229, 231);
+        transition: 2s;
+    }
+    
+    
