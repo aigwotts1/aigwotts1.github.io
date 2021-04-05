@@ -20,7 +20,12 @@ position:absolute;}
         background-repeat: no-repeat;
 
     }
+    h2{
+        font-family: 'Times New Roman', Times, serif;
+        text-shadow: 1px 1px 1px rgb(49, 34, 34);
+    }
     h1{
+        font-family: fantasy;
         margin:0px;
         text-shadow: 2px 3px 2px rgb(49, 34, 34);
     }
@@ -52,21 +57,23 @@ position:absolute;}
         transition: 2s;
     }
     .header-below:hover{
-        background-color: darkseagreen;
+        background-color: rgb(106, 218, 106);
         font-size: 20px;
         font-weight: bold;
     }
     nav a {
         text-decoration: none;
-        padding: 50px;
+        padding: 10px;
         text-align: center;
        
       
     }
+    
     #pics{
         text-align: center;
         text-shadow: rgb(29, 46, 29);
         color: rgb(58, 75, 92);
+        background-color:rgb(144, 243, 243);
         text-indent: 10px;
         font-family: cursive;
         transition: 1s;
@@ -75,8 +82,15 @@ position:absolute;}
         background-color: rgb(206, 250, 162);
         transition: 2s;
     }
+    @media screen and (min-width: 1024px) and (max-height: 1310px) {
+        /* Laptop */
+        #carimg{
+            height: 430px;
+        }
+    }
     #videos{
         color: midnightblue;
+        background-color:rgb(159, 247, 247);
         font-family: cursive;
         text-align: center;
         transition: 2s;
@@ -97,13 +111,12 @@ position:absolute;}
         transition: 3s;
     }
     #about{
+        background-color:rgb(205, 248, 248);
         text-align: center;
         color: rgb(73, 105, 105);
         transition: 2s;
     }
     #about:hover{
-        background-color: rgb(156, 229, 231);
+        background-color: rgb(168, 195, 197);
         transition: 2s;
     }
-    
-    
