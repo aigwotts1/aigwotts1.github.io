@@ -8,6 +8,16 @@ position:absolute;}
     margin: 0px;
     padding: 5px;
     }
+#start{
+        text-align: center;
+        font-size: 200px;
+        background-color: aqua;
+        margin: 50px;
+        padding: 100px;
+        color: rgb(172, 130, 219);
+        font-family: fantasy;
+        text-shadow: 2px 2px 2px black;
+    }
     #load{
         width: 100%;
         position: fixed;
