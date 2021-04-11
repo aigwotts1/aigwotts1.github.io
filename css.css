@@ -26,7 +26,7 @@ position:absolute;}
         align-items: center;
         text-align: center;
         height: 100vh;
-        background:rgb(245, 245, 245) url('loader.gif') center;
+        background:rgb(255, 255, 255) url('loader.gif') center;
         background-repeat: no-repeat;
 
     }
