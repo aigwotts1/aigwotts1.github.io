@@ -32,7 +32,7 @@ header h1{
         align-items: center;
         text-align: center;
         height: 100%;
-        background:rgb(255, 255, 255) url('loads.gif') center;
+        background:rgb(255, 255, 255) url('load.gif') center;
         background-repeat: no-repeat;
 
     }
