@@ -31,7 +31,7 @@ header h1{
         z-index: 99999;
         align-items: center;
         text-align: center;
-        height: 100vh;
+        height: 100%;
         background:rgb(255, 255, 255) url('loads.gif') center;
         background-repeat: no-repeat;
 
