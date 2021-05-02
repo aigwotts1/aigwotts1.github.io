@@ -1,9 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Ranchers&family=Rancho&display=swap');
-header h1{
-    font-family: 'Ranchers', cursive;
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+overflow: auto;
+
 }
 body{
-position:absolute;}
+    overflow: hidden;
+width: 100%;
+position: absolute;
+z-index: 10000;
+}
+header h1{
+    font-family: 'Ranchers', cursive;
+    overflow: hidden;
+}
 .header{
     background-color:rgb(65, 226, 226);
     text-align: center;
@@ -11,16 +23,6 @@ position:absolute;}
     font-size: 25px;
     margin: 0px;
     padding: 5px;
-    }
-#start{
-        text-align: center;
-        font-size: 200px;
-        background-color: aqua;
-        margin: 50px;
-        padding: 100px;
-        color: rgb(172, 130, 219);
-        font-family: fantasy;
-        text-shadow: 2px 2px 2px black;
     }
     #load{
         width: 100%;
@@ -30,7 +32,7 @@ position:absolute;}
         align-items: center;
         text-align: center;
         height: 100vh;
-        background:rgb(255, 255, 255) url('10.gif') center;
+        background:rgb(255, 255, 255) url('C:\Users\ABHINAV\Desktop\web\clicks\10.gif') center;
         background-repeat: no-repeat;
 
     }
@@ -45,8 +47,15 @@ position:absolute;}
     }
     .header-below nav a{
         color: darkcyan;
+        border-radius: 50px;
+        transition: 1s;
     }
-    
+    .header-below nav a:hover{
+        background-color: rgb(18, 128, 28);
+        color: blanchedalmond;
+        font-size: 15px;
+        transition: 1s;
+    }
     body{
         margin: 0;
         background-color: rgb(190, 236, 190);
@@ -64,11 +73,11 @@ position:absolute;}
        
     }
     .head-below{
-        transition: 2s;
+        transition: 0.5s;
 
     }
     .head-below:hover{
-        transition: 2s;
+        transition: 0.5s;
     }
     .header-below:hover{
         background-color: rgb(106, 218, 106);
@@ -81,6 +90,14 @@ position:absolute;}
         text-align: center;
        
       
+    }
+    #start{
+        text-align: center;
+        font-size: 400%;
+        background-color: aqua;
+        color: rgb(172, 130, 219);
+        font-family: fantasy;
+        text-shadow: 2px 2px 2px black;
     }
     
     #pics{
@@ -101,6 +118,7 @@ position:absolute;}
         #carimg{
             height: 430px;
         }
+        
     }
     #videos{
         color: midnightblue;
@@ -133,4 +151,57 @@ position:absolute;}
     #about:hover{
         background-color: rgb(168, 195, 197);
         transition: 2s;
+    }
+    #explore{
+        overflow: hidden;
+        width: 100%;
+            position: relative;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+    }
+    #explore::before{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        z-index: 10;
+        background: linear-gradient(to top,#578192,transparent);
+    }
+    #explore h3{
+        z-index: 1;
+        position: absolute;
+        color: cadetblue;
+        text-align: center;  
+        font-size: 20px;
+        font-family: fantasy; 
+        transform: translateY(-300px);
+
+ }
+ #explore img{
+     z-index: 2;
+ }
+ #explore h1{
+     overflow: hidden;
+     z-index: 1;
+     position: absolute;
+     transform: translateY(-270px);
+     font-size: 60px;
+     color: cadetblue;
+     font-family: 'Ranchers', cursive;
+    }
+    
+    #explore img{
+position: absolute;
+
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+pointer-events: none;
+object-fit: cover;
     }
