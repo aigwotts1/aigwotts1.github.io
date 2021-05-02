@@ -29,6 +29,16 @@
         <a href="#about">About</a>
         </nav>
     </section>
+     <div id="explore" class="explore">
+        <h3 id="texto">Let's check out my</h3>
+        <h1 id="textos">Photography</h1>
+        <img src="C:\Users\ABHINAV\Desktop\new\bird1.png" id="bird1">
+        <img src="C:\Users\ABHINAV\Desktop\new\bird2.png" id="bird2">
+        <img src="C:\Users\ABHINAV\Desktop\new\forest.png" id="forest">
+        <img src="C:\Users\ABHINAV\Desktop\new\rocks.png" id="rocks">
+        <img src="C:\Users\ABHINAV\Desktop\new\water.png" id="water">
+
+    </div>
     <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -164,8 +174,8 @@
         }
 
       AOS.init({
-          duration:1500,
-          offset:230
+          duration:2000,
+          offset:-75,
       }
       );
     </script>
@@ -179,5 +189,27 @@
         $("body").hide().show(3000);
     })
 </script>
+    <script>
+    let text=document.getElementById("texto");
+    let textos=document.getElementById("textos");
+
+    let bird1=document.getElementById("bird1");
+    let bird2=document.getElementById("bird2");
+    let forest=document.getElementById("forest");
+    let water=document.getElementById("water");
+    let rocks=document.getElementById("rocks");
+    let explorebut=document.getElementById("explorebut");
+    window.addEventListener('scroll',function(){
+        let value=window.scrollY;
+        text.style.top=50+value * 0.5+'%';
+        textos.style.top=50+value * 0.5+'%';
+        bird1.style.top=value*-1.5+'px';
+        bird1.style.left=value*2+'px';
+        bird2.style.top=value*-1.5+'px';
+        bird2.style.left=value*-5+'px';
+        explorebut.style.top=50+value * 0.5+'%';
+    })
+
+    </script>
     </body>
 </html>
