@@ -32,7 +32,7 @@ header h1{
         align-items: center;
         text-align: center;
         height: 100%;
-        background:rgb(255, 255, 255) url('load.gif') center;
+        background:rgb(255, 255, 255) url('loads.gif') center;
         background-repeat: no-repeat;
 
     }
@@ -113,9 +113,18 @@ header h1{
         background-color: rgb(206, 250, 162);
         transition: 2s;
     }
-
+    /*mobile*/
+    @media screen and (max-width: 600px) {
+        #load {
+          width: 100%;
+          
+        }
+       
+      }
+   
     @media screen and (min-width: 1024px) and (max-height: 1310px) {
         /* Laptop */
+      
         #carimg{
             height: 430px;
         }
@@ -146,15 +155,17 @@ header h1{
     #about{
         background-color:rgb(205, 248, 248);
         text-align: center;
+        align-items: center;
+        justify-content: center;
         color: rgb(73, 105, 105);
         transition: 2s;
+        display: flex;
+        
     }
     #about:hover{
         background-color: rgb(168, 195, 197);
         transition: 2s;
     }
-#about h4{
-overflow:hidden;}
     #explore{
         overflow: hidden;
         width: 100%;
@@ -208,3 +219,87 @@ height: 100%;
 pointer-events: none;
 object-fit: cover;
     }
+    #about h4{
+        overflow: hidden;
+        font-family: 'Ranchers', cursive;
+
+    }
+.card-out{
+    display: flex;
+       align-items: center;
+       justify-content: center;
+       text-align: center;
+       min-height: 100vh;
+       background: rgb(236, 151, 151);
+   }
+   .card{
+       position: relative;
+       width: 95%;
+       height: 400px;
+      overflow: hidden;
+       align-items: center;
+       justify-content: center;
+       background: rgb(115, 205, 211);
+       transform-style: preserve-3d;
+       transform: perspective(1000px);
+       box-shadow:10px 20px 40px rgba(0, 0, 0, 0.25);
+       transition: 1s;
+   }
+   .card .details{
+       overflow: hidden;
+       position: absolute;
+       top: 0;
+       width: 100%;
+       height: 100%;
+       padding: 20px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+   .card .details .content{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       overflow: hidden;
+       flex-direction: column;
+   }
+   
+   .card .details .content h2 span{
+       overflow: hidden;
+       color: rgb(0, 0, 0);
+       overflow: hidden;
+       font-family: 'Ranchers', cursive;
+       font-size: 0.8em;
+
+   }
+   .card .imgBox{position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    transform-origin: right;
+    box-shadow:10px 20px 40px rgba(0, 0, 0, 0.25);
+
+    transform-style: preserve-3d;
+    background: black;
+    transition: 1s;
+    z-index: 1;
+   }
+   .card:hover{
+       transform: translateX(10%);
+   }
+   .card:hover .imgBox{
+       transform: rotateY(-180deg);
+   }
+   .card .imgBox img{
+       position:absolute;
+       top: 0;
+       left: 0;
+       object-fit: cover;
+       transform-style: preserve-3d;
+       width: 100%;
+       height: 100%;
+       backface-visibility: hidden;
+   }
+   .card .imgBox img :nth-child(2){
+       transform: rotateY(180deg);
+   }
