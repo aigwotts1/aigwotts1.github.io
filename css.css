@@ -153,6 +153,8 @@ header h1{
         background-color: rgb(168, 195, 197);
         transition: 2s;
     }
+#about h4{
+overflow:hidden;}
     #explore{
         overflow: hidden;
         width: 100%;
