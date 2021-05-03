@@ -163,7 +163,7 @@ header h1{
         
     }
     #about:hover{
-        background-color: rgb(168, 195, 197);
+        background-color: rgb(224, 243, 179);
         transition: 2s;
     }
     #explore{
@@ -318,8 +318,8 @@ background: linear-gradient(356deg, rgba(2,0,36,1) 0%, rgba(255,255,255,0.362640
    #container-out #card-out{
        overflow: hidden;
        position: relative;
-       width: 350px;
-       height: 400px;
+       width: 1400px;
+       height: 600px;
        margin: 20px;
        display: flex;
        justify-content: flex-start;
@@ -329,20 +329,16 @@ background: linear-gradient(356deg, rgba(2,0,36,1) 0%, rgba(255,255,255,0.362640
    #container-out #card-out img{
        position: absolute;
        bottom: 0;
-       height: 400px;
-       left: 25%;
+       height: 500px;
+       left: 50%;
        transform: translateX(-50%);
        transition: 1.5s;
 
    }
-   #container-out #card-out img:hover{
-       visibility: hidden;
-       transition: 2s;
-       opacity: 0;
-   }
+   
    #container-out #card-out:hover img{
        left: 85%;
-       height: 435px;
+       height: 650px;
 
 }
 #container-out #card-out .contento{
@@ -355,7 +351,7 @@ background: linear-gradient(356deg, rgba(2,0,36,1) 0%, rgba(255,255,255,0.362640
 
 }
 #container-out #card-out:hover .contento{
-    left: 10%;
+    left: 5%;
     opacity: 1;
     visibility: visible;
     font-size: large;
