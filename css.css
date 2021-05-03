@@ -196,9 +196,7 @@ header h1{
         transform: translateY(-300px);
 
  }
- #explore img{
-     z-index: 2;
- }
+
  #explore h1{
      overflow: hidden;
      z-index: 1;
@@ -208,10 +206,10 @@ header h1{
      color: cadetblue;
      font-family: 'Ranchers', cursive;
     }
-    
+  
     #explore img{
 position: absolute;
-
+z-index: 2;
 top: 0;
 left: 0;
 width: 100%;
@@ -303,3 +301,104 @@ object-fit: cover;
    .card .imgBox img :nth-child(2){
        transform: rotateY(180deg);
    }
+   #container-out{
+       position: relative;
+       display: flex;
+       background: rgb(2,0,36);
+background: linear-gradient(356deg, rgba(2,0,36,1) 0%, rgba(255,255,255,0.3626401244091386) 0%, rgba(30,112,143,0.7323880235688025) 100%);
+        justify-content: center;
+       align-items: center;
+       
+   }
+   #container-out:hover{
+       
+       background: linear-gradient(90deg,rgb(238, 116, 116),white);
+   }
+
+   #container-out #card-out{
+       overflow: hidden;
+       position: relative;
+       width: 350px;
+       height: 400px;
+       margin: 20px;
+       display: flex;
+       justify-content: flex-start;
+       align-items: center;
+       background: linear-gradient(45deg,rgb(224, 167, 129),rgb(69, 69, 122));
+   }
+   #container-out #card-out img{
+       position: absolute;
+       bottom: 0;
+       height: 400px;
+       left: 25%;
+       transform: translateX(-50%);
+       transition: 1.5s;
+
+   }
+   #container-out #card-out img:hover{
+       visibility: hidden;
+       transition: 2s;
+       opacity: 0;
+   }
+   #container-out #card-out:hover img{
+       left: 85%;
+       height: 435px;
+
+}
+#container-out #card-out .contento{
+    position: relative;
+    width: 50%;
+    opacity: 0;
+    visibility: hidden;
+    left: 20%;
+    transition: 0.5s;
+
+}
+#container-out #card-out:hover .contento{
+    left: 10%;
+    opacity: 1;
+    visibility: visible;
+    font-size: large;
+}
+#container-out #card-out .contento h2{
+    color: wheat;
+    overflow: hidden;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    line-height: 1em;
+
+}
+#container-out #card-out .contento p{
+    color: white;
+font-family: cursive;
+}
+#container-out #card-out .contento a{
+    position: relative;
+    color: black;
+    background: blanchedalmond;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 1s;
+}
+#container-out #card-out .contento a:hover{
+    color: cyan;
+    background-color: black;
+    transition: 1s;
+    transform: translateX(20%);
+    font-weight: 700;
+}
+
+/* Gradient color1 - color2 - color1 */
+
+hr.style-one {
+    border: 0;
+    height: 0;
+    margin: 2px;
+    padding: 0;
+
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
