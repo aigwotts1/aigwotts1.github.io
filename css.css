@@ -376,24 +376,6 @@ background: linear-gradient(356deg, rgba(2,0,36,1) 0%, rgba(255,255,255,0.362640
     color: white;
 font-family: cursive;
 }
-#container-out #card-out .contento a{
-    position: relative;
-    color: black;
-    border-radius:50%;
-    background: blanchedalmond;
-    display: inline-block;
-    padding: 10px;
-    margin-top: 10px;
-    text-decoration: none;
-    font-weight: 500;
-    transition: 1s;
-}
-#container-out #card-out .contento a:hover{
-    color: cyan;
-    background-color: black;
-    transition: 1s;
-    font-weight: 700;
-}
 
 /* Gradient color1 - color2 - color1 */
 
