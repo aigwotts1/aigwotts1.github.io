@@ -312,15 +312,18 @@ object-fit: cover;
    }
    #container-out{
        position: relative;
+       margin: 20px;
        display: flex;
        background: rgb(2,0,36);
 background: linear-gradient(356deg, rgba(2,0,36,1) 0%, rgba(255,255,255,0.3626401244091386) 0%, rgba(30,112,143,0.7323880235688025) 100%);
         justify-content: center;
        align-items: center;
-       
+       border-radius: 0%;
+       transition: 5s;
    }
    #container-out:hover{
-       
+       border-radius: 25%;
+       transition: 5s;
        background: linear-gradient(90deg,rgb(238, 116, 116),white);
    }
 
@@ -330,7 +333,7 @@ background: linear-gradient(356deg, rgba(2,0,36,1) 0%, rgba(255,255,255,0.362640
        position: relative;
        width: 1000px;
        height: 600px;
-       margin: 20px;
+       margin: 5%;
        display: flex;
        justify-content: flex-start;
        align-items: center;
