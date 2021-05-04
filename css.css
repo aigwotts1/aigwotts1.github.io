@@ -113,6 +113,13 @@ header h1{
         background-color: rgb(206, 250, 162);
         transition: 2s;
     }
+#pics img{
+        transition: 1s;
+    }
+    #pics img:hover{
+        width: 33.3%;
+        transition: 1s;
+    }
     /*mobile*/
     @media screen and (max-width: 600px) {
         #load {
