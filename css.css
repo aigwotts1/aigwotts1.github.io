@@ -118,7 +118,7 @@ header h1{
         border-radius: 50%;
     }
     #pics img:hover{
-        width: 37%;
+        width: 35%;
         border-radius: 0%;
         transition: 1s;
     }
