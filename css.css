@@ -344,8 +344,7 @@ background: linear-gradient(356deg, rgba(2,0,36,1) 0%, rgba(255,255,255,0.362640
 #container-out #card-out .contento{
     position: relative;
     width: 50%;
-    opacity: 0;
-    visibility: hidden;
+    opacity: 0.2;
     left: 20%;
     transition: 0.5s;
 
@@ -371,6 +370,7 @@ font-family: cursive;
 #container-out #card-out .contento a{
     position: relative;
     color: black;
+    border-radius:50%;
     background: blanchedalmond;
     display: inline-block;
     padding: 10px;
@@ -383,7 +383,6 @@ font-family: cursive;
     color: cyan;
     background-color: black;
     transition: 1s;
-    transform: translateX(20%);
     font-weight: 700;
 }
 
