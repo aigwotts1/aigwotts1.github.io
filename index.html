@@ -34,6 +34,7 @@
         <h1 id="textos">Photography</h1>
         <img src="bird1.png" id="bird1">
         <img src="bird2.png" id="bird2">
+        <img src="starmoon.png" id="stars">
         <img src="forest.png" id="forest">
         <img src="rocks.png" id="rocks">
         <img src="water.png" id="water">
@@ -200,8 +201,8 @@
 </script>
     <script>
     let text=document.getElementById("texto");
-    let textos=document.getElementById("textos");
-
+    let textos=document.getElementById("textos");    
+    let stars=document.getElementById("stars");
     let bird1=document.getElementById("bird1");
     let bird2=document.getElementById("bird2");
     let forest=document.getElementById("forest");
@@ -210,7 +211,9 @@
     let explorebut=document.getElementById("explorebut");
     window.addEventListener('scroll',function(){
         let value=window.scrollY;
-        text.style.top=50+value * 0.5+'%';
+        stars.style.top=value * -0.8+'px';
+        forest.style.top=value * -0.1+'px';
+        text.style.top=53+value * 0.5+'%';
         textos.style.top=50+value * 0.5+'%';
         bird1.style.top=value*-1.5+'px';
         bird1.style.left=value*2+'px';
