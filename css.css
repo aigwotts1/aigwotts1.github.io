@@ -326,15 +326,23 @@ background: linear-gradient(356deg, rgba(2,0,36,1) 0%, rgba(255,255,255,0.362640
 
    #container-out #card-out{
        overflow: hidden;
+       border-radius: 50%;
        position: relative;
-       width: 1400px;
+       width: 1000px;
        height: 600px;
        margin: 20px;
        display: flex;
        justify-content: flex-start;
        align-items: center;
+       transition: 1s;
        background: linear-gradient(45deg,rgb(224, 167, 129),rgb(69, 69, 122));
    }
+   #container-out #card-out:hover{ 
+border-radius: 0%;   
+width: 1400px;
+transition: 1s;
+
+}
    #container-out #card-out img{
        position: absolute;
        bottom: 0;
