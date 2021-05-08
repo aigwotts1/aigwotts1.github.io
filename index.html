@@ -12,7 +12,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     </head>
-    <h2 id="start">Abhinav Vashishth Creativity</h2>
 <body onload="myFunction()">
     <div id="load"></div>
     
@@ -39,7 +38,9 @@
         <img src="rocks.png" id="rocks">
         <img src="water.png" id="water">
 
+    <a href="#carouselExampleControls" id="startexplore">EXPLORE</a>
     </div>
+    <div id="allbody">
         <hr class="style-one">
 
     <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -156,19 +157,61 @@
             </div>
             <img src="standup.png">
         
-       
-            
-            
+        <div class="contbut">
+                <a href="#contact"><span>Contact</span></a>
+            </div>
             </div>
         </div>
             
 
         
         </section>
-
-        
-        </section>
     </main>
+<div id="contact">
+    <div class="contactcont">
+        <h2><u>CONTACT</u></h2>
+        <div class="row100">
+            <div class="col">
+                <div class="inputBox">
+                    <input type="text" name="" required>
+                    <span class="text">First Name</span>
+                    <span class="line"></span>
+                </div>
+            </div>
+                <div class="col">
+                    <div class="inputBox">
+                        <input type="text" name="" required>
+                        <span class="text">Last Name</span>
+                        <span class="line"></span>
+                    </div>
+                </div>
+        </div>
+        <div class="row100">
+            <div class="col">
+                <div class="inputBox">
+                    <input type="text" name="" required>
+                    <span class="text">Email</span>
+                    <span class="line"></span>
+                </div>
+            </div>
+                <div class="col">
+                    <div class="inputBox">
+                        <input type="text" name="" required>
+                        <span class="text">Phone Number</span>
+                        <span class="line"></span>
+                    </div>
+                </div>
+        </div>
+        
+            <div class="row100">
+                <div class="col">
+                    <a href="#" id='contsend'><span>SEND</span></a>
+                    </div>
+                    </div>
+
+    </div>
+</div>
+
     <footer>
         <span>
             <a target="blank" href="https://www.youtube.com/watch?v=1jp0iWbidRw">| ~ <img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c545.png" alt="subscribe" width="5%"> ~ |</a>
@@ -176,6 +219,8 @@
             <a target="blank" href="https://www.instagram.com/wotts__aig/"> | ~ <img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c521.png" alt="insta" width="4%"> ~ |</a>
         </span>
     </footer>
+        <marquee>SUPPORT&emsp;| &emsp; THANKS FOR VISITING &emsp; |  &emsp;SHARE</marquee>
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         var preloader=document.getElementById('load');
@@ -189,14 +234,19 @@
       }
       );
     </script>
-<marquee>SUPPORT&emsp;| &emsp; THANKS FOR VISITING &emsp; |  &emsp;SHARE</marquee>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
 <script>
-    $(document).ready(function(){
-        $("#start").hide(10000);
-        $("body").hide().show(3000);
+   $(document).ready(function(){
+        $('#allbody').hide()
+        $('#contact').hide()
+        $("#startexplore").click(function(){
+            $('#allbody').show(100)
+        })
+        $(".contbut").click(function(){
+            $('#contact').toggle(2000)
+        })
     })
 </script>
     <script>
@@ -208,7 +258,7 @@
     let forest=document.getElementById("forest");
     let water=document.getElementById("water");
     let rocks=document.getElementById("rocks");
-    let explorebut=document.getElementById("explorebut");
+    let explorebut=document.getElementById("startexplore");
     window.addEventListener('scroll',function(){
         let value=window.scrollY;
         stars.style.top=value * -0.8+'px';
@@ -219,7 +269,7 @@
         bird1.style.left=value*2+'px';
         bird2.style.top=value*-1.5+'px';
         bird2.style.left=value*-5+'px';
-        explorebut.style.top=50+value * 0.5+'%';
+        explorebut.style.top=280+ value *-0.1+'px';
     })
 
     </script>
