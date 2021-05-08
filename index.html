@@ -13,11 +13,14 @@
 
     </head>
 <body onload="myFunction()">
+    <div id="progressbar"> AIG WOTTS</div>
     <div id="load"></div>
-    
-    <header class="header" data-aos="fade-down">
+    <div class="bannerover">
+    <div class="banner"data-aos="fade-down">
+        <video autoplay muted loop><source src="C:\Users\ABHINAV\Desktop\web\clicks\haa.mp4" type='video/mp4'></video>
         <h1>AIG WOTTS</h1>
-    </header>
+</div>
+</div>
 
     <section class="header-below" data-aos="fade-right">
         <nav class="head-below">
@@ -174,24 +177,29 @@
             <div class="col">
                 <div class="inputBox">
                     <input type="text" name="" required>
-                    <span class="text">First Name</span>
+                    <span class="name">First Name</span>
                     <span class="line"></span>
+                    <span class="indicator">FirstName</span>
                 </div>
             </div>
                 <div class="col">
                     <div class="inputBox">
                         <input type="text" name="" required>
-                        <span class="text">Last Name</span>
+                        <span class="name">Last Name</span>
                         <span class="line"></span>
+                        <span class="indicator">LastName</span>
+
                     </div>
                 </div>
         </div>
         <div class="row100">
             <div class="col">
                 <div class="inputBox">
-                    <input type="text" name="" required>
+                    <input type="email" name="" required>
                     <span class="text">Email</span>
                     <span class="line"></span>
+                    <span class="indicator">Email</span>
+
                 </div>
             </div>
                 <div class="col">
@@ -199,6 +207,8 @@
                         <input type="text" name="" required>
                         <span class="text">Phone Number</span>
                         <span class="line"></span>
+                        <span class="indicator">Mobile</span>
+
                     </div>
                 </div>
         </div>
@@ -211,6 +221,7 @@
 
     </div>
 </div>
+
 
     <footer>
         <span>
@@ -238,14 +249,21 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
 <script>
-   $(document).ready(function(){
+    $(document).ready(function(){
         $('#allbody').hide()
         $('#contact').hide()
+        $('#contsend').click(function(){
+            $("#contact").hide()
+        })
         $("#startexplore").click(function(){
             $('#allbody').show(100)
         })
         $(".contbut").click(function(){
             $('#contact').toggle(2000)
+        })
+        $('#progressbar').hide()
+        $("#startexplore").click(function(){
+            $('#progressbar').show(200)
         })
     })
 </script>
@@ -273,5 +291,15 @@
     })
 
     </script>
+    <script>
+       $(window).scroll(function(){
+           var scroll=$(window).scrollTop(),
+           dh=$(document).height(),
+           wh=$(window).height();
+           scrollPercent=(scroll / (dh-wh))*100;
+           $('#progressbar').css('width',scrollPercent+'%');
+
+       })
+   </script>
     </body>
 </html>
