@@ -162,18 +162,20 @@ header h1{
         transition: 3s;
     }
     #about{
-        background-color:rgb(205, 248, 248);
+        background: linear-gradient(180deg,rgb(196, 234, 250),white);
         text-align: center;
         align-items: center;
+        border-radius: 10%;
         justify-content: center;
         color: rgb(73, 105, 105);
-        transition: 2s;
+        transition: 1s;
         display: flex;
         
     }
     #about:hover{
         background-color: rgb(224, 243, 179);
-        transition: 2s;
+        transition: 1s;
+        border-radius: 0;
     }
     #explore{
         background-color: rgb(196, 234, 250);
@@ -186,6 +188,7 @@ header h1{
         align-items: center;
         margin: 0px;
     }
+    
     #explore::before{
         content: '';
         position: absolute;
@@ -402,4 +405,190 @@ hr.style-one {
 
     background: #333;
     background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+.contbut{
+    height: 40px;
+    width: 80px;
+    display: flex;
+    position: absolute;
+    bottom: 15%;
+    opacity: 0;
+    transition: 1s;
+align-items:center;
+justify-content: center;
+    border-radius: 50%;
+    background-color: white;
+
+}
+.contbut:hover{
+    background-color: black;
+}
+#container-out:hover .contbut{
+    opacity: 1;
+    left: 26%;
+    transition: 5s ease-in;
+    
+}
+.contbut a{
+    position: relative;
+    display: inline-flex;
+    text-decoration: none;
+    transition: 0.5s;
+    color: black;
+    font-family: 'Ranchers', cursive;
+
+}
+.contbut a:hover{
+    color: white;
+}
+.contbut a span{
+    position: relative;
+    z-index: 1;
+}
+#contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(0deg,rgb(238, 116, 116),white);
+}
+.contactcont{
+    width: 80%;
+    padding: 20px;
+}
+.contactcont h2{
+    width: 100%;
+    font-size: 36px;
+    font-family:"Ranchers",cursive;
+    text-align: center;
+    margin-bottom: 10px;
+color: #1b858d;
+overflow: hidden;
+}
+.contactcont .row100{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+
+}
+.contactcont .row100 .col{
+    position: relative;
+    width: 100%;
+    padding: 0 10px;
+    margin: 30px 0 10px;
+    transition: 0.5s;
+}
+.contactcont .row100 .inputBox{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    color: #1b858d;
+
+}
+.contactcont .row100 .inputBox input,
+.contactcont .row100 .inputBox .textarea textarea{
+position: absolute;
+width: 100%;
+height: 100%;
+background: transparent;
+box-shadow: none;
+border: none;
+outline: none;
+font-size: 18px;
+padding: 0 10px;
+z-index: 1;
+color: rgb(253, 180, 192);
+}
+.contactcont .row100 .inputBox .text{
+position: absolute;
+top: 0;
+left: 0;
+line-height: 40px;
+font-size: 20px;
+padding: 0 10px;
+display: block;
+transition: 0.5s;
+pointer-events: none;
+
+}
+.contactcont .row100 .inputBox input:valid + .text,
+.contactcont .row100 .inputBox input:focus + .text{
+    top: -35px;
+    left: -10px;
+
+}
+.contactcont .row100 .inputBox .line{
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #1b858d;
+    transition: 0.5s;
+    border-radius: 2px;
+    pointer-events: none;
+}
+.contactcont .row100 .inputBox input:valid ~ .line,
+.contactcont .row100 .inputBox input:focus ~ .line{
+    height: 100%;
+
+}
+
+.contactcont .row100 .inputBox .textarea{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    padding: 10px 0;
+
+}
+.contactcont .row100 .inputBox .textarea textarea{
+    height: 100%;
+    resize: none;
+    
+}
+.contactcont .row100 .inputBox textarea:valid + .text,
+.contactcont .row100 .inputBox textarea:focus + .text{
+    top: -35px;
+    left: -10px;
+}
+.contactcont .row100 .inputBox textarea:valid ~ .line,
+.contactcont .row100 .inputBox textarea:focus ~ .line{
+    height: 100%;
+}
+#contsend{
+    position: relative;
+    border: 0;
+    border: 0px solid pink;
+    display: inline-block;
+    padding: 15px 30px;
+    background: #1b858d;
+    text-decoration: none;
+    color: pink;
+    font-size: 20px;
+    transition: 2s ease-in-out;
+}
+#contsend:hover{
+    font-size: 30px;
+    transition: 0.5s ease-in-out;
+    border: 10px solid pink;
+}
+#startexplore{
+    position: absolute;
+    top: 50%;
+    margin: 5px;
+    padding: 10px;
+    background-color: white;
+    color: #1b858d;
+    border-radius: 100%;
+    text-decoration: none;
+    transition: 1s ease-in-out;
+    font-size: 25px;
+    font-family: fantasy;
+}
+#startexplore:hover{
+    transition: 1s ease-in-out;
+    color: white;
+    background-color: #1b858d;
+
 }
