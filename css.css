@@ -205,7 +205,7 @@ header h1{
         text-align: center;  
         font-size: 20px;
         font-family: fantasy; 
-        transform: translateY(-250px);
+        transform: translateY(-280px);
 
  }
 
@@ -213,7 +213,7 @@ header h1{
      overflow: hidden;
      z-index: 11;
      position: absolute;
-     transform: translateY(-200px);
+     transform: translateY(-250px);
      font-size: 60px;
      color: rgb(79, 189, 190);
      font-family: 'Ranchers', cursive;
