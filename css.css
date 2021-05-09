@@ -665,7 +665,7 @@ pointer-events: none;
     height: 100%;
     background:transparent;
     color: rgb(97, 219, 219);
-    font-size: 10vh;
+    font-size: 9.5vh;
     text-align: center;
     mix-blend-mode: screen;
 }
