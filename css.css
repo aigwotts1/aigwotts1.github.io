@@ -20,7 +20,7 @@ header h1{
     background-color:rgb(65, 226, 226);
     text-align: center;
     color:rgb(221, 107, 107);
-    font-size: 25px;
+    font-size: 35px;
     margin: 0px;
     padding: 5px;
     }
@@ -631,41 +631,4 @@ pointer-events: none;
     height: 15px;
     border-radius: 25px;
     background: linear-gradient(to right,rgb(144, 186, 235),pink,rgb(216, 255, 193));
-}
-.banner{
-    position: relative;
-    width: 100%;
-    height: 13vh;
-    display: flex;
-    overflow: hidden;
-    justify-content: center;
-    align-items: center;
-    border-radius: 38%;
-}
-.bannerover{
-    background-color: rgb(97, 219, 219);
-    color: rgb(97, 219, 219);
-}
-.banner:hover{
-    border-radius: 0%;
-}
-.banner video{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.banner h1{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background:transparent;
-    color: rgb(97, 219, 219);
-    font-size: 9.5vh;
-    text-align: center;
-    mix-blend-mode: screen;
 }
